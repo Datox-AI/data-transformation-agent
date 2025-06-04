@@ -1,0 +1,9 @@
+{
+  "dockerfile_lines": [],
+  "graphs": {
+    "agent": "./src/transformation_agent/graph.py:graph"
+  },
+  "dependencies": [
+    "."
+  ]
+}

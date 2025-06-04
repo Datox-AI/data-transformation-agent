@@ -12,13 +12,6 @@ from src.transformation_agent.classes import (
     ReplaceAction,
 )
 
-# from classes import (
-    # LogicalExpression,
-    # FilterAction,
-    # ReplaceExpression,
-    # ReplaceAction,
-# )
-
 
 
 load_dotenv(override=True)
@@ -242,30 +235,3 @@ replace_tool = StructuredTool.from_function(
     return_direct=True,
 )
 
-
-# data = {
-#     "else_": {"column_name": "AUM"},
-#     "when": [
-#         {
-#             "and": [
-#                 {
-#                     "column_name": "Security Category Industry Description",
-#                     "operator": "equal to",
-#                     "comparison_value": {"input": "FINANCIAL"},
-#                 },
-#                 {
-#                     "column_name": "Issue currency",
-#                     "operator": "does not contain",
-#                     "comparison_value": {"input": "USD"},
-#                 },
-#             ],
-#             "result_value": {"input": 0},
-#         }
-#     ],
-# }
-
-
-
-# res = replace_tool.invoke(input={"expression": data, "replace_column": "AUM"})
-
-# print(res)
